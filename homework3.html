@@ -64,10 +64,10 @@
     if (options.yesalph) {Array1 = Array1.concat(yesalph); 
         Array2.push(randomGen(yesalph));
     }
-    if (options.yescaps) {Array1 = Array1.concat(yescaps); 
+   if (options.yescaps) {Array1 = Array1.concat(yescaps); 
         Array2.push(randomGen(yescaps));
     }   
-    if (options.yesnumb) {Array1 = Array1.concat(yesnumb); 
+   if (options.yesnumb) {Array1 = Array1.concat(yesnumb); 
         Array2.push(randomGen(yesnumb));
     }
     if (options.yesspec) {Array1 = Array1.concat(yesspec); 
@@ -81,8 +81,9 @@
     for (var i=0; i <= Array2.length; i++) { //wtf? so confusing, need to understand better
         result[i] = Array2[i];
     }}
-    return result.join(" ")
-    console.log(result);
+    console.log(finalPw);
+    return finalPw.join("")
+   
     
     }
     makePw ()
