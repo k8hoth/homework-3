@@ -9,13 +9,13 @@
 <body>
      <script>
          //set up variables
-        var alph = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
-        var caps = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
-        var numb = ["0","1","2","3","4","5","6","7","8","9"]; 
-        var spec = [" ", "!", "*","+","-","/",":",";","<","?","@","^","_", "`","~"];
+        var yesalph = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"];
+        var yescaps = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"];
+        var yesnumb = ["0","1","2","3","4","5","6","7","8","9"]; 
+        var yesspec = [" ", "!", "*","+","-","/",":",";","<","?","@","^","_", "`","~"];
         
         var pwlength = " ";
-        var userChoice = ["yes","no"]
+       
 
         //prompt questions/answers
        
@@ -36,7 +36,7 @@
         console.log(getOptions); 
         
         var passwordOptions = {
-            length: pwlength,
+            pwlength: pwlength,
             yesalph: yesalph,
             yescaps: yescaps,
             yesnumb: yesnumb,
@@ -81,7 +81,7 @@
     for (var i=0; i <= Array2.length; i++) { //wtf?
         result[i] = Array2[i];
     }}
-    return result.join("");
+    return result.join(" ")
     console.log(result);
     
     }
