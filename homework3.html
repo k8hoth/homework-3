@@ -74,19 +74,25 @@
         Array2.push(randomGen(yesspec));        
     }
 
-    for (var i=0; i <= options.length; i++) {
-        var arrOptions = makePW (Array1);
-        result.push(arrOptions);
+    for (var i=0; i <= options.pwlength; i++) {
+        var arrOptions = randomGen(Array1);
+        finalPw.push(arrOptions);
+    }
 
-    for (var i=0; i <= Array2.length; i++) { //wtf? so confusing, need to understand better
-        result[i] = Array2[i];
-    }}
+    for (var i=0; i <= Array2.length; i++) { 
+        finalPw[i] = Array2[i]; 
+
+    }
+   
+
     console.log(finalPw);
     return finalPw.join("")
    
     
     }
-    makePw ()
+    result = makePw() 
+
+    alert(result)
         
     </script>
 </body>
